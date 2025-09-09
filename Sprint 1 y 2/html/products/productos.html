@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Catalogo de productos - Hermanos Jota">
+    <title>Hermanos Jota - Productos</title>
+
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <img src="../img/logo.png" alt="Hermanos Jota Logo">
+                <span>Hermanos Jota</span>
+            </div>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../index.html">inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <div class="cart-iconn">
+
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path
+                        d="M3 3H5L5.4 5M7 13H17L21 5H5.4M7 13L5.4 5M7 13L4.7 15.3C4.3 15.7 4.6 16.5 5.1 16.5H17M17 13V16.5M9 19.5A1.5 1.5 0 108 21A1.5 1.5 0 009 19.5ZM20 19.5A1.5 1.5 0 1018.5 21A1.5 1.5 0 0020 19.5Z"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <span class="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <secttion clas="page-header">
+            <div class="container">
+                <h1>Productos</h1>
+                <p>Explora nuestra coleccion de muebles artesanales, donde cada pieza es una obra de arte unica, creada
+                    con dedicacion y materiales de la mas alta calidad.</p>
+            </div>
+            </section>
+
+            <section class="catalog-controls">
+                <div class="container">
+                    <div class="search-bars">
+                        <input type="text" id="search-input" placeholder="Buscar productos...">
+                        <button id="button" id="search-button" aria-label="Buscar">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                <circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="2"></circle>
+                                <path d="m21 21-4.35-4.35" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="filter-options">
+                        <button class="filter-btn active" data-filter="todos">Todos</button>
+                        <button class="filter-btn" data-filter="aparadores">Aparadores</button>
+                        <button class="filter-btn" data-filter="sillas">Sillas</button>
+                        <button class="filter-btn" data-filter="mesas">Mesas</button>
+                        <button class="filter-btn" data-filter="dormitorio">Dormitorio</button>
+                        <button class="filter-btn" data-filter="oficina">Oficina</button>
+                    </div>
+                </div>
+            </section>
+            <section class="product-catalog">
+                <div class="container">
+                    <div class="product-grid" id="product-grid">
+                        <!-- Los productos se cargaran aqui dinamicamente Javascript -->
+                        <div class="loading-spinner">
+                            <div class="spinner"></div>
+                            <p>Cargando productos</p>
+                        </div>
+                    </div>
+                    <div class="no-results" id="no-results" style="display: none;">
+                        <p>No se encontraron productos.</p>
+                        <p>Intenta con otros terminos de busqueda o explora nuestras categorias</p>
+                    </div>
+
+
+                </div>
+            </section>
+
+            <section class="cta-section">
+                <div class="container">
+                    <div class="cta-content">
+                        <h2>Listo para transformar tu espacio?</h2>
+                        <p>Descubre la coleccion completa y encuentra la pieza perfecta que refleje tu estilo y
+                            personalidad.</p>
+                        <a href="contacto.html" class="btn-primary">Contactanos</a>
+                    </div>
+                </div>
+            </section>
+    </main>
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-about">
+                <div class=footer-section>
+                    <div class="footer-logo">
+                        <img src="../img/logo.png" alt="Hermanos Jota Logo">
+                        <span>Hermanos Jota</span>
+                    </div>
+                    <p>Redescubriendo el arte de vivir desde 2025</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <address>
+                        <p>Av. San Juan 2847<br>
+                            Barrio de San Cristobal<br>
+                            Ciudad Autonoma de Buenos Aires<br>
+                            Argentina</p>
+                        <p>Email: info@hermanosjota.com.ar</p>
+                        <p>WhatsApp: +54 11 4567 8900</p>
+                    </address>
+                </div>
+                <div class="footer-section">
+                    <h3>Horarios</h3>
+                    <p>Lunes a Viernes: 10:00 - 19:00<br>
+                        Sábados: 10:00 - 14:00</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Siguenos</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram">@hermanosjota_ba</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Hermanos Jota. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/products.js"></script>
+    <script src="../js/cart.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
